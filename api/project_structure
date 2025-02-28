@@ -1,0 +1,52 @@
+llm_domain_framework/
+├── api/
+│   ├── pyproject.toml
+│   ├── poetry.lock
+│   ├── src/
+│   │   ├── __init__.py
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   ├── routes/
+│   │   │   │   ├── __init__.py
+│   │   │   │   └── llm.py
+│   │   │   └── models/
+│   │   │       ├── __init__.py
+│   │   │       └── request_models.py
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   ├── llm_manager.py
+│   │   │   └── providers/
+│   │   │       ├── __init__.py
+│   │   │       ├── base_provider.py
+│   │   │       ├── openai_provider.py
+│   │   │       └── ollama_provider.py
+│   │   ├── adapter/
+│   │   │   ├── __init__.py
+│   │   │   └── adapter_manager.py
+│   │   └── connectors/
+│   │       ├── __init__.py
+│   │       └── base_connector.py
+│   ├── .env
+│   └── main.py
+├── app/
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   └── src/
+│       ├── App.tsx
+│       ├── index.tsx
+│       ├── components/
+│       │   ├── Chat/
+│       │   │   ├── ChatWindow.tsx
+│       │   │   └── MessageInput.tsx
+│       │   └── ModelSelector/
+│       │       └── ModelSelector.tsx
+│       ├── services/
+│       │   └── api.ts
+│       ├── types/
+│       │   └── index.ts
+│       └── styles/
+│           └── index.css
+└── README.md 

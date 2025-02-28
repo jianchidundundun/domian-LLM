@@ -1,0 +1,62 @@
+services:
+  matlab:
+    name: "MATLAB服务"
+    description: "MATLAB信号处理服务"
+    endpoint: "http://localhost:8001"
+    methods:
+      lowpass:
+        name: "低通滤波"
+        description: "对信号进行低通滤波处理"
+        parameters:
+          - name: "signal_data"
+            type: "List[float]"
+            description: "输入信号数据"
+          - name: "cutoff_freq"
+            type: "float" 
+            description: "截止频率"
+          - name: "sampling_rate"
+            type: "float"
+            description: "采样率"
+      highpass:
+        name: "高通滤波"
+        description: "对信号进行高通滤波处理"
+        parameters:
+          - name: "signal_data"
+            type: "List[float]"
+            description: "输入信号数据"
+          - name: "cutoff_freq"
+            type: "float"
+            description: "截止频率"
+          - name: "sampling_rate"
+            type: "float"
+            description: "采样率"
+      bandpass:
+        name: "带通滤波"
+        description: "对信号进行带通滤波处理"
+        parameters:
+          - name: "signal_data"
+            type: "List[float]"
+            description: "输入信号数据"
+          - name: "low_cutoff"
+            type: "float"
+            description: "低截止频率"
+          - name: "high_cutoff"
+            type: "float"
+            description: "高截止频率"
+          - name: "sampling_rate"
+            type: "float"
+            description: "采样率"
+      fft:
+        name: "傅里叶变换"
+        description: "计算信号的傅里叶变换"
+        parameters:
+          - name: "data"
+            type: "List[float]"
+            description: "输入信号数据"
+      ifft:
+        name: "逆傅里叶变换"
+        description: "计算信号的逆傅里叶变换"
+        parameters:
+          - name: "data"
+            type: "List[complex]"
+            description: "频域数据" 
