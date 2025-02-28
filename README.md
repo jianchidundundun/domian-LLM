@@ -6,7 +6,7 @@ A professional domain-specific LLM framework that enables intelligent API execut
 
 ![Demo: API Execution Planning](docs/assets/demo.gif)
 
-*Demo shows: Natural language query being transformed into API execution plan and subsequent execution with MATLAB mock server for signal processing tasks.*
+*Demo shows: Natural language query being transformed into API execution plan*
 
 ## Core Concept
 
